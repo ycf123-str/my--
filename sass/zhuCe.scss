@@ -1,0 +1,190 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #f4f4f4;
+}
+
+.commonHeader{
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	-webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+	div{
+		margin: 0 80px;padding-top: 20px;
+		a{
+			display: inline-block;
+			width: 130px;
+			height: 32px;
+			vertical-align: middle;
+			img{
+				width:130px;height: 32px;
+			}
+		}
+		span{
+			font-size: 16px;
+			color:#333;margin-left:36px;
+			vertical-align: middle;
+		}
+	}
+}
+
+.commonContent{
+	width: 100%;
+	height: 550px;
+	background: #f8f8f8;
+	margin-top: 3px;
+	padding-top: 50px;
+}
+.commonContent_start{
+	width: 830px;
+	margin: 0px auto 50px;
+	-webkit-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.08);
+	background: #fff;
+	padding: 10px;
+	overflow: hidden;
+}
+.regist_left{
+	float: left;
+	width: 415px;height: 460px;
+}
+.regist_left img{
+	width: 415px;height: 460px;
+}
+.regist_right{
+	width: 280px;
+	margin-right: 47px;
+	float: right;
+}
+.regist-form-title {
+    height: 30px;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 21px;
+}
+.outer_position{
+	position: relative;
+}
+.commonInputStyle{
+	width:270px;height: 40px;
+	margin-top: 24px;
+    padding-left: 8px;
+    border: 1px solid #E7E7E7;
+    outline-color: #dfaf7d;
+}
+.errorToast {
+    font-size: 12px;
+    color: #e22;
+    position: absolute;
+    padding-left: 10px;
+    left: 0;
+    bottom: -20px;
+	display: none;
+}
+.registValid{
+	width:280px;
+	height:40px;
+	margin-top: 24px;
+	box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+}
+.registValidcode{
+	height: 100%;
+    width: 55%;
+    border: none;
+    padding-left: 8px;
+    outline: none;
+	display: inline-block;
+	vertical-align: top;
+}
+.registValid img{
+	vertical-align: top;
+	height: 80%;width: 35%;
+	margin-top: 4px;
+	margin-right: 5px;
+}
+.outer-verifyCode{
+	position: relative;
+}
+.verifyCodeLine{
+	width: 1px;
+    height: 26px;
+    background-color: #E4E4E4;
+    position: absolute;
+    top: 31px;
+    left: 143px;
+}
+#getVerifyCode{
+	font-size: 14px;
+    color: #dfaf7d;
+    letter-spacing: 0;
+    line-height: 14px;
+    display: inline-block;
+    position: absolute;
+    top: 37px;
+    left: 177px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+}
+.suggest{
+	width: 285px;height: 19px;margin-top: 22px;
+	font-size: 12px;color: #333;
+}
+.suggest a{
+	font-size: 12px;color: #dfaf7d;
+}
+.suggest a:hover{
+	color: #337ab7;
+}
+.registBtn{
+	width: 280px;height: 40px;
+	margin-top: 22px;
+	background: #dfaf7d;
+	border-radius: 4px;
+	color: #fff;font-size: 14px;
+	text-align: center;
+	line-height: 40px;
+}
+.go_login{
+	width:280px;
+	margin-top: 20px;
+	text-align: right;
+}
+.go_login a{
+	font-size: 12px;
+	color: #999;
+}
+.go_login a:hover{
+	color: #337ab7;
+}
+
+
+footer{
+	width: 100%;background: #F2F2F2;
+	padding: 42px 0;
+}
+.footContent{
+	text-align: center;color: #E4E4E4;
+}
+.footContent a{
+	font-size: 12px;color: #999;padding: 0 10px;
+	line-height: 12px;
+}
+.footContent span{
+	font-size: 12px;color: #999;padding: 0 10px;
+	line-height: 12px;
+}
+.copy-right{
+	font-size: 12px;color: #999;
+	padding: 10px 0;
+}
+.footDisclaimer{
+	font-size: 12px;color: #999;
+}

@@ -1,14 +1,463 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title> 用户注册</title>
-		<link rel="icon" type="image/png" href="../image/icon.png"/>
-		<link rel="stylesheet" href="../css/goodslist.css">
-	</head>
-	<body>
-		<div class="title">
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>【建材大全】建材商品分类_建材商品查询-红星美凯龙上海家居官网</title>
+	<link rel="icon" type="image/png" href="../image/icon.png"/>
+	<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/goodslist.css"/>
+</head>
+<body>
+<!-- 头部导航s -->
+<div id="dengLuDiv1">
+	<div class="dengLuDiv2">
+		<div class="dengLuLeft"></div>
+		<div class="dengLuRight">
+			<div class="login_title">
+				<span class="login_title_left">
+					账号登录
+					<i></i>
+				</span>
+				<span class="login_title_right">
+					快捷登录
+					<i style="display: none;"></i>
+				</span>
+			</div>
+			<div class="login_content">
+				<div id="zh_login">
+					<input class="zh_login_phone" type="text" placeholder=" 手机号"/>
+					<input class="zh_login_pass" type="password" placeholder=" 密码"/>
+				</div>
+				<div id="kj_login" style="display: none;">
+					<input class="kj_phonecls" type="text" placeholder="  请输入11位手机号码"/>
+					<div class="loginFastvalcls">
+						<input type="text" placeholder="  验证码" class="kj_yzmcls">
+						<img class="kj_tpyzm" src="../image/captcha.jpg" alt="验证码">
+					</div>
+					<div class="get_phone_yzm">
+						<input type="text" placeholder="  验证码" class="kj_phone_yzm">
+						<input type="button" value="获取验证码" class="phone_yzm_btn">
+					</div>
+					<div class="suggest">
+						<input class="suggest_one" type="checkbox" checked>
+						<span>我已阅读并同意</span>
+						<a href="#">《红星美凯龙用户服务协议》</a>
+					</div>
+				</div>
+				<div class="login_key">
+					登录
+				</div>
+				<div class="login_bottom">
+					<a href="#">免费注册</a>
+					<a href="#">忘记密码</a>
+				</div>
+			</div>
+			<div class="login_foot">
+				<span></span>
+				您也可以直接使用爱琴海账号进行登录
+				<span></span>
+			</div>
+		</div>
+		<div class="close_login">×</div>
+	</div>
+</div>
+<div id="n_a_v">
+	<div class="city_center">
+		<div id="city_top" class="city_switch">
+			<span class="span_city"><i></i>西安</span>
+			<span class="span_switch">[切换]</span>
+		</div>
+		<div class="city_right">
+			<a id="login_a" href="#">登录</a>
+			<a href="zhuCe.html" target="_blank">注册</a>|
+			<span id="appMaId">
+			<img id="imgAppId" class="imgApp" src="../image/app.png">
+			app下载
+			</span>|
+			<span><i></i>咨询热线 : 4008-213-213</span>
+		</div>
+		<div id="city_bottom" class="switch_biao" style="display: none;">
+			<div class="citys_xuanze">
+				<ul id="ulCityId">
+					<li style="color: rgb(223, 175, 125)">热门城市<i></i></li>
+					<li>ABCDE<i style="display: none;"></i></li>
+					<li>FGHJ<i style="display: none;"></i></li>
+					<li>KLMNP<i style="display: none;"></i></li>
+					<li>QRSTW<i style="display: none;"></i></li>
+					<li>XYZ<i style="display: none;"></i></li>
+				</ul>
+			</div>
+			<div class="citys">
+				<a href="#">上海</a>
+				<a href="#">西安</a>
+				<a href="#">广州</a>
+				<a href="#">北京</a>
+				<a href="#">重庆</a>
+				<a href="#">上海</a>
+				<a href="#">西安</a>
+				<a href="#">广州</a>
+				<a href="#">北京</a>
+				<a href="#">重庆</a>
+				<a href="#">上海</a>
+				<a href="#">西安</a>
+				<a href="#">广州</a>
+				<a href="#">北京</a>
+				<a href="#">重庆</a>
+				<a href="#">上海</a>
+				<a href="#">西安</a>
+				<a href="#">广州</a>
+				<a href="#">北京</a>
+				<a href="#">重庆</a>
+				<a href="#">上海</a>
+				<a href="#">西安</a>
+				<a href="#">广州</a>
+				<a href="#">北京</a>
+				<a href="#">重庆</a>
+				<a href="#">上海</a>
+				<a href="#">西安</a>
+				<a href="#">广州</a>
+				<a href="#">北京</a>
+				<a href="#">重庆</a>
+				<a href="#">西安</a>
+				<a href="#">广州</a>
+				<a href="#">北京</a>
+				<a href="#">重庆</a>
+			</div>
+			<div class="citys" style="display: none;">
+				<a href="#">东莞</a>
+				<a href="#">保定</a>
+				<a href="#">北京</a>
+				<a href="#">长沙</a>
+				<a href="#">长春</a>
+				<a href="#">大连</a>
+				<a href="#">常州</a>
+				<a href="#">宝鸡</a>
+				<a href="#">重庆</a>
+			</div>
+			<div class="citys" style="display: none;">
+				<a href="#">贵阳</a>
+				<a href="#">济南</a>
+				<a href="#">济宁</a>
+				<a href="#">福州</a>
+				<a href="#">合肥</a>
+				<a href="#">佛山</a>
+				<a href="#">衡阳</a>
+				<a href="#">哈尔滨</a>
+			</div>
+			<div class="citys" style="display: none;">
+				<a href="#">六盘山</a>
+				<a href="#">南京</a>
+				<a href="#">六安</a>
+				<a href="#">昆明</a>
+				<a href="#">聊城</a>
+				<a href="#">廊坊</a>
+				<a href="#">宁波</a>
+			</div>
+			<div class="citys" style="display: none;">
+				<a href="#">上海</a>
+				<a href="#">青岛</a>
+				<a href="#">沈阳</a>
+				<a href="#">苏州</a>
+				<a href="#">上海</a>
+				<a href="#">青岛</a>
+				<a href="#">沈阳</a>
+				<a href="#">苏州</a>
+				<a href="#">上海</a>
+				<a href="#">青岛</a>
+				<a href="#">沈阳</a>
+				<a href="#">苏州</a>
+				<a href="#">苏州</a>
+			</div>
+			<div class="citys" style="display: none;">
+				<a href="#">郑州</a>
+				<a href="#">徐州</a>
+				<a href="#">西安</a>
+				<a href="#">扬州</a>
+				<a href="#">郑州</a>
+				<a href="#">徐州</a>
+				<a href="#">西安</a>
+				<a href="#">扬州</a>
+				<a href="#">郑州</a>
+				<a href="#">徐州</a>
+				<a href="#">西安</a>
+			</div>
+			<div class="more_citys">
+				<a href="#">更多城市内容，请下载红星美凯龙APP</a>
+			</div>
+		</div>
+	</div>
+	<div class="logo_nav">
+		<div class="logImg">
+			<a href="#" title="红星美凯龙"><img src="../image/logo.png"></a>
+		</div>
+		<div class="logo_nav_right">
+			<a href="#" style="color: #222;padding-bottom: 17px;"
+			 title="所有分类" class="syfls">
+			 	<i></i>
+			 	所有分类
+			 </a>
+			<a href="#" style="color: #dfaf7d" title="首页">首页</a>
+			<a href="#" id="kal_fu" title="看案例">看案例
+				<div class="nav_jtou"></div>
+				<div id="kal_zi">
+					<h6>精品案例</h6>
+					<h6>软装搭配</h6>
+					<h6>装修指南</h6>
+					<h6>效果图</h6>
+				</div>
+			</a>
+			<a href="#" title="找装修">找装修</a>
+			<a href="#" title="找设计">找设计</a>
+			<a href="#" id="kal_fu" title="挑尖货">挑尖货
+				<div class="nav_jtou"></div>
+				<div id="kal_zi">
+					<h6>尖货</h6>
+					<h6>品牌库</h6>
+				</div>
+			</a>
+			<a href="#" id="kal_fu">逛商场
+				<div class="nav_jtou"></div>
+				<div id="kal_zi">
+					<h6>上海真北商场</h6>
+					<h6>上海汶水商场</h6>
+					<h6>上海浦东沪南商场</h6>
+					<h6>上海金桥商场</h6>
+					<h6>上海浦江商场</h6>
+					<h6>上海吴中路商场</h6>
+					<h6>上海金山商场</h6>
+				</div>
+			</a>
+			<a href="#" title="集团官网">集团官网</a>
+			<span class="ewm_spana"><img src="../image/blackAppIcon.png">
+				<div class="ewm_box"></div>
+			</span>
+			<span class="ewm_spanb"><img src="../image/codeIcon.png">
+				<div class="gzh_box"></div>
+			</span>
+		</div>
+	</div>
+ 	<div class="allcated">
+ 		<div class="allcate-detail" style="display: flex;">
+ 			<div class="cate-left">
+ 				<div class="cated-designer" style="border-bottom: 1px dotted #DDD;">
+ 					<a href="#" style="display: block;width: 100%;height: 100%;text-align: center;">
+ 						<span>设计师</span>
+ 						<div class="cate-icon cate-icon1"></div>
+ 					</a>
+ 				</div>
+ 				<div class="cated-designer">
+ 					<a href="#" style="display: block;width: 100%;height: 100%;text-align: center;">
+ 						<span>家装公司</span>
+ 						<div class="cate-icon cate-icon2"></div>
+ 					</a>
+ 				</div>
+ 			</div>
+ 			<div class="single-cated">
+ 				<div class="cated-designer" style="height: 95%;display:inline-block;">
+ 					<a href="#" style="display:inline-block;text-align: center;">
+ 						<span>建材</span>
+ 						<div class="cate-icon cate-icon3"></div>
+ 					</a>
+ 				</div>
+ 				<div class="scated-twos" style="display: inline-block;">
+					<a href="#">卫浴洁具</a>
+					<a href="#">地板</a>
+					<a href="#">瓷砖</a>
+					<a href="#">龙头水槽</a>
+					<a href="#">壁纸</a>
+					<a href="#">吊顶浴霸</a>
+					<a href="#">油漆涂料</a>
+					<a href="#">电子电工</a>
+				</div>
+				<div class="scated-twos" style="display: inline-block;">
+					<a href="#">晾衣架/杆</a>
+					<a href="#">基础建材</a>
+				</div>
+ 			</div>
+ 			<div class="single-cated">
+ 				<div class="cated-designer" style="height: 95%;display:inline-block;">
+ 					<a href="#" style="display:inline-block;text-align: center;">
+ 						<span>定制家具</span>
+ 						<div class="cate-icon cate-icon4"></div>
+ 					</a>
+ 				</div>
+ 				<div class="scated-twos" style="display: inline-block;">
+					<a href="#">全屋定制</a>
+					<a href="#">门</a>
+					<a href="#">移门壁柜</a>
+					<a href="#">橱柜</a>
+					<a href="#">榻榻米</a>
+					<a href="#">窗</a>
+					<a href="#">楼梯</a>
+				</div>
+ 			</div>
+ 			<div class="single-cated">
+ 				<div class="cated-designer" style="height: 95%;display:inline-block;">
+ 					<a href="#" style="display:inline-block;text-align: center;">
+ 						<span>家具</span>
+ 						<div class="cate-icon cate-icon5"></div>
+ 					</a>
+ 				</div>
+ 				<div class="scated-twos" style="display: inline-block;">
+					<a href="#">住宅家具</a>
+					<a href="#">柜</a>
+					<a href="#">沙发</a>
+					<a href="#">桌台</a>
+					<a href="#">椅/凳/榻</a>
+					<a href="#">案/几/架</a>
+					<a href="#">床垫</a>
+				</div>
+				<div class="scated-twos" style="display: inline-block;">
+					<a href="#">儿童家具</a>
+					<a href="#">红木家具</a>
+					<a href="#">办公家具</a>
+					<a href="#">户外家具</a>
+				</div>
+ 			</div>
+ 			<div class="single-cated">
+ 				<div class="cated-designer" style="height: 95%;display:inline-block;">
+ 					<a href="#" style="display:inline-block;text-align: center;">
+ 						<span>家居软装</span>
+ 						<div class="cate-icon cate-icon6"></div>
+ 					</a>
+ 				</div>
+ 				<div class="scated-twos" style="display: inline-block;">
+					<a href="#">灯饰照明</a>
+					<a href="#">家居布艺</a>
+					<a href="#">床上用品</a>
+					<a href="#">家居日用</a>
+					<a href="#">家居装饰</a>
+					<a href="#">餐厨用品</a>
+				</div>
+ 			</div>
+ 			<div class="single-cated">
+ 				<div class="cated-designer" style="height: 95%;display:inline-block;">
+ 					<a href="#" style="display:inline-block;text-align: center;">
+ 						<span>电器</span>
+ 						<div class="cate-icon cate-icon7"></div>
+ 					</a>
+ 				</div>
+ 				<div class="scated-twos" style="display: inline-block;">
+					<a href="#">厨电</a>
+					<a href="#">净水设备</a>
+					<a href="#">生活电器</a>
+					<a href="#">家居系统</a>
+					<a href="#">冰箱/洗衣机</a>
+					<a href="#">空调</a>
+					<a href="#">影音</a>
+				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+</div>
+<!-- 商品列表 -->
+<div style="position:relative;top:110px;">
+	<div class="page-bread">
+		<a href="#">首页</a>
+		<i> > </i>
+		<a href="#">建材</a>
+	</div>
+	<div class="filter-tab">
+		<a class="filter-tab-one" href="#">找商家</a>
+		<a class="filter-tab-two" href="#">找商品</a>
+	</div>
+	<div class="filter">
+		<div class="selected">
+			<span class="fs-span1">已选条件</span>
+			<div class="fs-condition">
+				<div class="fscf-content">
+					建材
+					<i></i>
+				</div>
+				<div class="fs-all-first">
+					
+				</div>
+				<div class="icon-after-first"> > </div>
+			</div>
+		</div>
+		<div class="selected-category">
+			<span>分类</span>
+			<a href="#">卫浴洁具</a>
+			<a href="#">地板</a>
+			<a href="#">壁纸</a>
+			<a href="#">瓷砖</a>
+			<a href="#">龙头水槽</a>
+			<a href="#">吊顶浴霸</a>
+			<a href="#">电子电工</a>
+			<a href="#">油漆涂料</a>
+			<a href="#">基础建材</a>
+			<a href="#">晾衣架/杆</a>
+		</div>
+		<div class="selected-brand">
+			<span>品牌</span>
+			<div class="single-brand">
+				<img src="../image/ppai1.png">
+				<p>诺贝尔</p>
+			</div>
+			<div class="single-brand">
+				<img src="../image/ppai2.png">
+				<p>菲林格尔</p>
+			</div>
+			<div class="single-brand">
+				<img src="../image/ppai3.png">
+				<p>普乐美</p>
+			</div>
+			<div class="single-brand">
+				<img src="../image/ppai4.png">
+				<p>绿森林</p>
+			</div>
+			<div class="single-brand">
+				<img src="../image/ppai5.png">
+				<p>冠珠</p>
+			</div>
+			<div class="single-brand">
+				<img src="../image/ppai6.png">
+				<p>安派森</p>
+			</div>
+			<div class="single-brand">
+				<img src="../image/ppai7.png">
+				<p>久盛</p>
+			</div>
+			<div class="single-brand">
+				<img src="../image/ppai8.png">
+				<p>金意陶</p>
+			</div>
+			<div class="single-brand">
+				<img src="../image/ppai9.png">
+				<p>奥普</p>
+			</div>
+			<div class="single-brand">
+				<img src="../image/ppai10.png">
+				<p>福瑞</p>
+			</div>
+			<div class="more-brand">
+				<a href="#">更多品牌</a>
+			</div>
+		</div>
+		<div class="product-list">
 			
 		</div>
-	</body>
+	</div>
+</div>
+</body>
 </html>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript">
+	window.onload = function(){
+		$(".fscf-content")[0].onmouseover = function(){
+			this.style.border = "1px solid #DFAF7D";
+			this.style.borderBottom = "#fff";
+			$(".fs-all-first")[0].style.display = "block";
+		}
+	}
+
+function $(str){
+	if(str.charAt(0)=="#"){
+		return document.getElementById(str.substring(1));
+	}else if(str.charAt(0)=="."){
+		return document.getElementsByClassName(str.substring(1));
+	}else{
+		return document.getElementsByTagName(str);
+	}
+}
+</script>

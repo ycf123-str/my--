@@ -6,6 +6,7 @@ let mincss = require('gulp-minify-css');
 let minimg = require('gulp-imagemin');
 let connect = require('gulp-connect');
 let sass = require('gulp-sass');
+let babel = require('gulp-babel');
 
 gulp.task('watchall',async ()=>{
 	gulp.watch("sass/**/*",async ()=>{
@@ -24,6 +25,10 @@ gulp.task('watchall',async ()=>{
 	})
 	gulp.watch("mmall/js/*.js",async ()=>{
 		gulp.src("mmall/js/*.js")
+		.pipe(babel({
+			presets:['es2015']
+		}))
+		.pipe(uglify())
 		.pipe(gulp.dest('D:\\phpStudy\\WWW\\mmall\\js'));
 	})
 	gulp.watch("mmall/image/*.{jpg,png}",async ()=>{

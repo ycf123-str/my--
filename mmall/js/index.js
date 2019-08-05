@@ -1,4 +1,4 @@
-//头部城市部分
+//头城市部分
 let liDoms = $("#ulCityId").children;
 let citys = $(".citys");
 	for(let i=0;i<liDoms.length;i++){
@@ -63,6 +63,36 @@ window.onscroll = function(){
 	}else if(scrollTop<1){
 		move02(n_a_v,"top",0,300);
 	}
+}
+
+let aDoms = $(".logo_nav_right")[0].children;
+for(let i=1;i<aDoms.length-2;i++){
+	aDoms[i].setAttribute("index",i);
+	aDoms[i].onmouseover = function(){
+		for(let j=0;j<aDoms.length;j++){
+			aDoms[j].style.color = "#222";
+		}
+	this.style.color = "#dfaf7d";
+	}
+	aDoms[i].onmouseout = function(){
+		this.style.color = "#222";
+		aDoms[1].style.color = "#dfaf7d";
+	}
+}
+
+let allcated = $(".allcated")[0];
+let syfls = $(".syfls")[0];
+syfls.onmouseover = function(){
+	allcated.style.display = "block";
+}
+allcated.onmouseover = function(){
+	allcated.style.display = "block";
+}
+syfls.onmouseout = function(){
+	allcated.style.display = "none";
+}
+allcated.onmouseout = function(){
+	allcated.style.display = "none";
 }
 
 let bannerTu = $("#bannerTu");
