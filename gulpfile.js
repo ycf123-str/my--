@@ -40,6 +40,10 @@ gulp.task('watchall',async ()=>{
 		gulp.src("mmall/demo/*.html")
 		.pipe(gulp.dest('D:\\phpStudy\\WWW\\mmall\\demo'));
 	})
+	gulp.watch("goodsAndShoppingCart",async ()=>{
+		gulp.src("goodsAndShoppingCart/**/*")
+		.pipe(gulp.dest('D:\\phpStudy\\WWW\\goodsAndShoppingCart'));
+	})
 })
 
 // gulp.task('server',async ()=>{

@@ -188,15 +188,15 @@
 	</div>
 	<div class="logo_nav">
 		<div class="logImg">
-			<a href="#" title="红星美凯龙"><img src="../image/logo.png"></a>
+			<a href="indexss.html" title="红星美凯龙"><img src="../image/logo.png"></a>
 		</div>
 		<div class="logo_nav_right">
-			<a href="#" style="color: #222;padding-bottom: 17px;"
+			<a href="#" style="color: #dfaf7d;padding-bottom: 17px;"
 			 title="所有分类" class="syfls">
 			 	<i></i>
 			 	所有分类
 			 </a>
-			<a href="#" style="color: #dfaf7d" title="首页">首页</a>
+			<a href="indexss.html" title="首页">首页</a>
 			<a href="#" id="kal_fu" title="看案例">看案例
 				<div class="nav_jtou"></div>
 				<div id="kal_zi">
@@ -368,9 +368,13 @@
 				<div class="fscf-content">
 					建材
 					<i></i>
-				</div>
-				<div class="fs-all-first">
-					
+					<div class="fs-all-first">
+						<a href="#">家居软装</a>
+						<a href="#">家具</a>
+						<a href="#">建材</a>
+						<a href="#">电器</a>
+						<a href="#">定制家具</a>
+					</div>
 				</div>
 				<div class="icon-after-first"> > </div>
 			</div>
@@ -442,22 +446,5 @@
 </body>
 </html>
 <script type="text/javascript" src="../js/index.js"></script>
-<script type="text/javascript">
-	window.onload = function(){
-		$(".fscf-content")[0].onmouseover = function(){
-			this.style.border = "1px solid #DFAF7D";
-			this.style.borderBottom = "#fff";
-			$(".fs-all-first")[0].style.display = "block";
-		}
-	}
-
-function $(str){
-	if(str.charAt(0)=="#"){
-		return document.getElementById(str.substring(1));
-	}else if(str.charAt(0)=="."){
-		return document.getElementsByClassName(str.substring(1));
-	}else{
-		return document.getElementsByTagName(str);
-	}
-}
-</script>
+<!-- <script type="text/javascript" src="../js/ajaxTools.js"></script> -->
+<script type="text/javascript" src="../js/goodslist.js"></script>
